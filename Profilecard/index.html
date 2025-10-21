@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="developer" content="Anointing Anowa" />
+    <meta
+      name="description"
+      content="Frontend Wizards Stage 0 - Profile Card by Anointing"
+    />
+    <title>Anointing Anowa | Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn-icons-png.flaticon.com/512/1077/1077114.png"
+    />
+  </head>
+
+  <body>
+    <main class="container">
+      <button
+        id="theme-toggle"
+        aria-label="Toggle Theme"
+        class="theme-toggle"
+        title="Toggle Theme"
+      > 
+      WELCOME😊!
+        
+      </button>
+
+      <article class="profile-card" data-testid="test-profile-card">
+        <header class="profile-header">
+          <figure class="avatar-container">
+            <div class="avatar-ring">
+              <img
+                src="/image/image001.jpg"
+                alt="Anointing's Profile"
+                class="avatar"
+                data-testid="test-user-avatar"
+              />
+            </div>
+            <figcaption class="avatar-caption">
+              Frontend Developer
+            </figcaption>
+          </figure>
+
+          <div class="profile-info">
+            <h2 class="user-name" data-testid="test-user-name">
+              Anointing Anowa
+            </h2>
+            <p class="user-bio" data-testid="test-user-bio">
+              Frontend Developer | Client Resolution Specialist | AI Enthusiast
+            </p>
+            <div class="current-time" data-testid="test-user-time"></div>
+          </div>
+        </header>
+
+        <nav
+          class="social-links"
+          data-testid="test-user-social-links"
+          aria-label="Social media links"
+        >
+          <ul class="social-list">
+            <li>
+              <a
+                href="https://www.instagram.com/anointingawowa?igsh=M3NpdWRjdzhndDVs"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                data-testid="test-user-social-twitter"
+                aria-label="Follow Anointing on Instagram"
+              >
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/anointing-anowa"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                data-testid="test-user-social-linkedin"
+                aria-label="Connect with Anointing Anowa on LinkedIn"
+              >
+                <span>💼 LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Anoin12/Myprofile"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                data-testid="test-user-social-github"
+                aria-label="View Anointing's GitHub"
+              >
+                <span> GitHub</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <section class="hobbies-section">
+  <h3>Hobbies</h3>
+  <div class="chips-container" data-testid="test-user-hobbies">
+    <span class="chip"> Building software and innovation</span>
+    <span class="chip"> Studying new tech trends</span>
+    <span class="chip"> Singing</span>
+    <span class="chip"> Drawing</span>
+    <span class="chip">Creative writing</span>
+  </div>
+</section>
+
+<section class="dislikes-section">
+  <h3>Dislikes</h3>
+  <div class="chips-container dislikes" data-testid="test-user-dislikes">
+    <span class="chip"> Negativity</span>
+    <span class="chip"> Dishonesty</span>
+    <span class="chip"> Poor communication</span>
+    <span class="chip">  Unclean code </span>
+    <span class="chip"> Procrastination</span>
+  </div>
+</section>
+
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
