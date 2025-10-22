@@ -14,7 +14,7 @@ body {
   font-size:small;
   background-color: #ffffff;
   min-height: 100vh;
-  color: rgb(1, 1, 1);
+  color: rgb(238, 232, 232);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,6 +54,9 @@ body {
   animation: fadeSlideIn 0.8s ease forwards;
   transform: translateY(20px);
   width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 
@@ -62,7 +65,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 30px;
-  background: linear-gradient(145deg, #368fef, #fbd6d6);
+  background: linear-gradient(145deg, #630f78, #2b1191);
 }
 
 
@@ -94,7 +97,7 @@ body {
 
 .avatar-caption {
   font-style: italic;
-  color: hsl(264, 62%, 14%);
+  color:hsl(270, 20%, 96%);
   margin-top: 8px;
   font-size: 0.9rem;
 }
@@ -108,13 +111,13 @@ body {
 .user-name {
   font-size: 2rem;
   font-weight: 700;
-  color: hsl(264, 62%, 14%);
+  color: hsl(270, 20%, 96%);
   margin-bottom: 10px;
 }
 
 .user-bio {
   font-size: 1.05rem;
-  color: hsl(264, 62%, 14%);
+  color: hsl(270, 20%, 96%);
   margin-bottom: 14px;
   line-height: 1.6;
 }
@@ -312,3 +315,234 @@ body.dark-mode .theme-toggle {
   background: #f5bcbc;
   color: #c63535;
 }
+main {
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 1.5rem;
+  background-color: #c63535;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+}
+
+.success {
+  color: green;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+/* NAVIGATION BASE STYLE */
+/*.main-nav {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1rem 0;
+  margin-bottom:10px;
+  position: relative;
+  margin-top:auto;
+  z-index: 100;
+}
+.main-nav {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1rem 0;
+  margin-top: auto; 
+  z-index: 100;
+  width: 100%;
+  position: relative; 
+}*/
+.profile-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px; /* creates space for the nav */
+}
+
+.main-nav {
+  position: absolute;
+  bottom: 10px; /* ensures it sits at the bottom of the header */
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0.5rem 0;
+  background: transparent;
+  box-shadow: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #c63535; /* Your accent color */
+  transition: width 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #c63535;
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+}
+
+/* ====== ABOUT PAGE STYLING ====== */
+
+/* Inherit base fonts and colors */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(to bottom right, #ffffff, #ffe5e5);
+  color: #333;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Main container card */
+main[data-testid="test-about-page"] {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  padding: 2.5rem;
+  animation: fadeSlideIn 0.8s ease forwards;
+}
+
+/* Headings */
+main h2 {
+  color: #a12323;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #c63535;
+  padding-left: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Paragraphs */
+main p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+/* Lists */
+main ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  list-style: disc;
+  color: #a12323;
+}
+
+main li {
+  margin-bottom: 0.6rem;
+  font-weight: 500;
+}
+
+/* Section spacing and subtle background difference */
+main section {
+  background: linear-gradient(135deg, #fff, #fff7f7);
+  border: 1px solid #f1b1b1;
+  border-radius: 14px;
+  padding: 1.5rem 1.8rem;
+  margin-bottom: 1.8rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(198, 53, 53, 0.15);
+}
+
+/* Animation */
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  main[data-testid="test-about-page"] {
+    padding: 1.5rem;
+  }
+  
+  main h2 {
+    font-size: 1.2rem;
+  }
+
+  main p, main li {
+    font-size: 0.95rem;
+  }
+}
+
+/* Dark Mode Compatibility (optional if you toggle themes) */
+body.dark-mode main {
+  background: #1a1a1a;
+  color: #f1f1f1;
+}
+
+body.dark-mode main section {
+  background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+  border-color: #c63535;
+}
+
+body.dark-mode main h2 {
+  color: #f5bcbc;
+  border-left-color: #f5bcbc;
+}
+
