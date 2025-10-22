@@ -1,4 +1,4 @@
-# 🧙‍♀️HNG 13 Frontend Wizards — Stage 0 Task: Build a Testable Profile Card
+# 🧙‍♀️HNG 13 Frontend Wizards: Build a Testable Profile Card
 
 Welcome to my **Stage 0 submission** 🎉
 This project is a **responsive, accessible, and testable Profile Card** built entirely with **semantic HTML, modern CSS, and vanilla JavaScript**.
@@ -7,7 +7,7 @@ The design goes beyond the basics it introduces subtle interactivity, animation,
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 The **Profile Card** component is designed to:
 
@@ -19,9 +19,9 @@ It’s lightweight, mobile-first, and showcases creativity through motion, theme
 
 ---
 
-## 🧩 Project Features
+## Project Features
 
-### ✅ Core Requirements Implemented
+###  Core Requirements Implemented
 
 | Requirement                 | Implemented | Description                                                                       |
 | --------------------------- | ----------- | --------------------------------------------------------------------------------- |
@@ -42,16 +42,15 @@ The card sits on a **red gradient background** that complements the user’s ava
 
 Additional design perks:
 
-* ✨ Animated floating glow around the avatar
-* 🕒 Real-time live clock
-* 💡 Responsive grid-to-flex layout
-* 🖱️ Hover ripple effects on interactive elements
-* 🔴 Theme toggle (light ↔ red accent)
-* ♿ Accessible focus rings for keyboard users
+* Animated floating glow around the avatar
+* Real-time live clock
+* Responsive grid-to-flex layout
+* Hover ripple effects on interactive elements
+* Accessible focus rings for keyboard users
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 
 * **HTML5** (Semantic structure & accessibility)
 * **CSS3** (Flexbox, Grid, transitions, animations)
@@ -63,19 +62,21 @@ Additional design perks:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
-📦 profile-card
- ┣ 📜 index.html          → Main structure and semantic layout
- ┣ 📜 style.css           → Responsive styling and animations
- ┣ 📜 script.js           → Time updates, theme toggle, interactivity
- ┗ 📜 README.md           → Documentation (this file)
+ profile-card
+ ┣  index.html          → Main structure and semantic layout
+ ┣  about.html          → Basic information
+ ┣  contact.html        → Semantic layout of a contact form
+ ┣  style.css           → Responsive styling and animations
+ ┣  script.js           → Time updates, theme toggle, interactivity
+ ┗  README.md           → Documentation (this file)
 ```
 
 ---
 
-## 🧪 Testing Notes
+## Testing Notes
 
 ### Data Test IDs
 
@@ -108,7 +109,7 @@ You only need a modern browser (no build tools required).
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/Blessing-Akanimoh-James/HNG---Stage-0-Task
+   git clone https://github.com/Anoin12/profile-card.git
    ```
 
 2. Navigate into the project folder
@@ -128,24 +129,24 @@ You only need a modern browser (no build tools required).
 ## 🌐 Live Demo
 
 **Hosted on Netlify:**
-🔗 [https://blessing-akanimoh-james.netlify.app/](https://blessing-akanimoh-james.netlify.app/)
+🔗 [https://jocular-narwhal-8db40d.netlify.app/](https://jocular-narwhal-8db40d.netlify.app/)
 
 **GitHub Repository:**
-🔗 [https://github.com/Blessing-Akanimoh-James/HNG---Stage-0-Task](https://github.com/Blessing-Akanimoh-James/HNG---Stage-0-Task)
+🔗 [https://github.com/Anoin12/profile-card.git/HNG---Stage-0-Task](https://github.com/Anoin12/profile-card.git/)
 
 ---
 
-## 🧩 Accessibility & Responsiveness Testing
+##  Accessibility & Responsiveness Testing
 
-* ✅ Passed keyboard navigation test
-* ✅ Focus visible on all interactive elements
-* ✅ Responsive across breakpoints (360px → 1440px)
-* ✅ Avatar has proper `alt` description
-* ✅ Contrast ratio follows WCAG AA standards
+*  Passed keyboard navigation test
+*  Focus visible on all interactive elements
+*  Responsive across breakpoints (360px → 1440px)
+*  Avatar has proper `alt` description
+*  Contrast ratio follows WCAG AA standards
 
 ---
 
-## 🧠 Developer Notes
+## Developer Notes
 
 * The **JavaScript clock** updates every second to show current milliseconds dynamically.
 * The **theme toggle** uses `localStorage` to remember the user’s preferred theme.
@@ -154,11 +155,11 @@ You only need a modern browser (no build tools required).
 
 ---
 
-## 🧾 License
+##  License
 
 This project was built as part of the **HNG Frontend - Stage 0 Task**.
-© 2025 Blessing James. All rights reserved.
+© 2025 Anointing Anowa. All rights reserved.
 
 ---
 
-> 💡 *"Design is not just what it looks like and feels like. Design is how it works."* — Steve Jobs
+>
